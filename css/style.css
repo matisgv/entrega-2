@@ -8,8 +8,25 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: #efefef;
 }
 
-.navbar {
-  list-style-type: none;
+nav {
+  display: flex;
+  background-color: #cecece;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+a {
+  color: #615289;
+  font-size: 22px;
+  text-decoration: none;
 }
