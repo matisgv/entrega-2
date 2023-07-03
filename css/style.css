@@ -1,10 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Roboto+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200&display=swap");
 
 :root {
   --font-color1: #c09766;
   --font-color2: #9a7a4d;
+  --font-color3: #000000;
+  --bg-color1: #2b2b2b;
   --bg-gradient1: #e9e1c4;
-  --bg-gradient2: #c1a352;
+  --bg-gradient2: #bca35e;
+  --bg-gradient3: #57534b;
+  --bg-gradient4: #3d3a2f;
 }
 
 * {
@@ -16,23 +20,21 @@
 }
 
 body {
-  font-family: "Playfair Display", serif;
+  font-family: "Roboto Serif", serif;
   background: linear-gradient(
-    144deg,
+    to right,
     var(--bg-gradient1) 0%,
     var(--bg-gradient2) 100%
   );
   background-repeat: no-repeat;
 }
 
-/* HEADER */
-
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 3rem;
-  background-color: #2b2b2b;
+  background-color: var(--bg-color1);
   position: sticky;
   top: 0;
 }
@@ -48,27 +50,136 @@ header img {
 }
 
 .navbar a {
-  font-weight: 600;
+  font-family: "DM Serif Display", serif;
+  font-weight: 500;
   color: var(--font-color1);
   font-size: 24px;
 }
 
-/* HERO */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 #hero {
   display: flex;
   max-width: 1200px;
   padding: 70px;
-  justify-content: center;
-  align-items: center;
+  gap: 60px;
 }
 
 .hero-info {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  width: 80%;
+  gap: 40px;
+  width: 50%;
+}
+
+.hero-info h1 {
+  font-family: "Playfair Display", serif;
+  color: var(--font-color3);
+  font-weight: 900;
+  font-size: 80px;
+}
+
+.hero-info p {
+  color: var(--font-color3);
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.hero-info b {
+  font-weight: 500;
+}
+
+.buttons {
+  display: flex;
+  gap: 30px;
+}
+
+.buttons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 70px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  font-weight: 200;
+  font-size: 16px;
+}
+
+.btn1 {
+  background: linear-gradient(
+    to right,
+    var(--bg-gradient3) 0%,
+    var(--bg-gradient4) 100%
+  );
+  color: var(--bg-gradient1);
+}
+
+.btn2 {
+  background-color: transparent;
+  border: var(--bg-gradient4) 2px solid;
+  color: var(--bg-gradient4);
 }
 
 .hero-card {
+  display: flex;
+  width: 500px;
+  padding: 15px;
+  border-radius: 15px;
+  background: linear-gradient(
+    to right,
+    var(--bg-gradient3) 0%,
+    var(--bg-gradient4) 100%
+  );
+  background-repeat: no-repeat;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.hero-card img {
+  width: 100%;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+#about {
+  display: flex;
+  padding: 150px;
+  max-width: 1200px;
+  justify-content: center;
+}
+
+.nosotros {
+  display: flex;
+  padding: 30px;
+  border-radius: 15px;
+  background: linear-gradient(
+    to right,
+    var(--bg-gradient3) 0%,
+    var(--bg-gradient4) 100%
+  );
+  background-repeat: no-repeat;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.nosotros p {
+  font-weight: 200;
+  color: var(--bg-gradient1);
+  text-align: center;
 }
