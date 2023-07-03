@@ -180,6 +180,11 @@ main {
 
 .nosotros p {
   font-weight: 200;
+  line-height: 26px;
   color: var(--bg-gradient1);
   text-align: center;
+}
+
+.nosotros b {
+  font-weight: 500;
 }
