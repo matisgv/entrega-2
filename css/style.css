@@ -194,7 +194,7 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 60px;
-  margin-bottom: 120px;
+  margin-bottom: 200px;
 }
 
 #productos h2 {
@@ -237,4 +237,112 @@ main {
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
   padding: 22px;
+}
+
+#donde-encontrarnos {
+  background: linear-gradient(
+    to right,
+    var(--bg-gradient2) 0%,
+    var(--bg-gradient1) 100%
+  );
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.where {
+  display: flex;
+  max-width: 1600px;
+  gap: 70px;
+}
+
+.where-info {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding: 70px;
+  width: 50%;
+}
+
+.where-info h2 {
+  font-family: "DM Serif Display", serif;
+  font-size: 40px;
+  font-weight: 800;
+  color: var(--font-color3);
+}
+
+.where-info img {
+  width: 16px;
+}
+
+.where-info h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.where-info p {
+  font-weight: 200;
+}
+
+.sucursales {
+  display: flex;
+  gap: 66px;
+}
+
+.sucursal {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.sucursal-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.sucursal-item {
+  display: flex;
+  gap: 1rem;
+}
+
+.where-img {
+  width: 560px;
+}
+
+.where-img img {
+  width: 100%;
+  display: block;
+}
+
+.social {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.social img {
+  width: 20px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 36px;
+  padding-top: 60px;
+  padding-bottom: 45px;
+  font-size: 14px;
+  font-weight: 200;
+  color: var(--font-color3);
+}
+
+footer a {
+  color: var(--font-color3);
+}
+
+.footer {
+  display: flex;
+  gap: 30px;
 }
