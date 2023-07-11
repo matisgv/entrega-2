@@ -56,6 +56,10 @@ header img {
   font-size: 24px;
 }
 
+.navbar a:hover {
+  color: var(--bg-gradient1);
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -121,6 +125,10 @@ main {
     var(--bg-gradient4) 100%
   );
   color: var(--bg-gradient1);
+}
+
+.buttons a:hover {
+  font-weight: 600;
 }
 
 .btn2 {
@@ -239,6 +247,16 @@ main {
   padding: 22px;
 }
 
+.product-card:hover {
+  background: linear-gradient(
+    to right,
+    var(--bg-gradient3) 0%,
+    var(--bg-gradient4) 100%
+  );
+  color: var(--bg-gradient1);
+  border: var(--bg-gradient1) 2px solid;
+}
+
 #donde-encontrarnos {
   background: linear-gradient(
     to right,
@@ -317,12 +335,16 @@ main {
 
 .social {
   display: flex;
-  justify-content: flex-start;
-  gap: 10px;
+  justify-content: center;
+  gap: 18px;
 }
 
 .social img {
   width: 20px;
+}
+
+.social img:hover {
+  width: 24px;
 }
 
 footer {
@@ -340,6 +362,10 @@ footer {
 
 footer a {
   color: var(--font-color3);
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
 
 .footer {
