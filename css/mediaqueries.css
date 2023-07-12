@@ -49,6 +49,19 @@
     display: flex;
   }
 
+  #hero {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-info {
+    width: 90%;
+  }
+
+  .hero-card {
+    display: none;
+  }
+
   #about {
     padding: 150px 80px;
     font-size: 14px;
@@ -62,6 +75,12 @@
 
   .footer {
     gap: 14px;
+  }
+}
+
+@media (max-width: 720px) {
+  #hero {
+    padding: 70px 30px;
   }
 }
 
