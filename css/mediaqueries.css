@@ -1,4 +1,39 @@
-@media (max-width: 1112px) {
+@media (max-width: 1360px) {
+  .where {
+    max-width: 1000px;
+    gap: 100px;
+  }
+
+  .sucursal {
+    gap: 2rem;
+  }
+
+  .sucursal-info {
+    gap: 1rem;
+  }
+
+  .sucursales {
+    gap: 24px;
+  }
+
+  .where-info {
+    gap: 54px;
+  }
+
+  .where-info h2 {
+    font-size: 32px;
+  }
+
+  .where-info h3 {
+    font-size: 18px;
+  }
+
+  .where-info p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1140px) {
   #hero {
     padding: 100px;
   }
@@ -20,11 +55,76 @@
   .hero-card {
     width: 400px;
   }
+
+  .where {
+    max-width: 880px;
+    gap: 70px;
+  }
+
+  .sucursal {
+    gap: 2rem;
+  }
+
+  .sucursal-info {
+    gap: 1rem;
+  }
+
+  .sucursales {
+    gap: 24px;
+  }
+
+  .where-info {
+    gap: 54px;
+    padding: 40px 20px;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .where-info h2 {
+    font-size: 32px;
+  }
+
+  .where-info h3 {
+    font-size: 18px;
+  }
+
+  .where-info p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1036px) {
+  #hero {
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    padding: 80px;
+    gap: 40px;
+  }
+
+  .hero-info h1 {
+    font-size: 40px;
+  }
+
+  .hero-info p {
+    font-size: 14px;
+  }
+
+  .buttons a {
+    font-size: 13px;
+    width: 150px;
+    height: 50px;
+  }
+
+  .hero-card {
+    width: 300px;
+  }
 }
 
 @media (max-width: 992px) {
   .navbar-list {
     background-color: #fff;
+    box-shadow: -1px 11px 16px 1px rgba(0, 0, 0, 0.42);
     position: absolute;
     flex-direction: column;
     width: 100%;
@@ -49,38 +149,105 @@
     display: flex;
   }
 
-  #hero {
-    justify-content: center;
-    align-items: center;
-  }
-
-  .hero-info {
-    width: 90%;
-  }
-
-  .hero-card {
-    display: none;
-  }
-
   #about {
     padding: 150px 80px;
     font-size: 14px;
   }
+}
 
-  footer {
-    font-size: 12px;
-    gap: 30px;
-    padding: 40px;
+#productos h2 {
+  font-size: 32px;
+}
+
+#productos h3 {
+  font-size: 17px;
+}
+
+#productos p {
+  font-size: 14px;
+}
+
+.p-cards {
+  padding: 0;
+  margin: 0;
+}
+
+footer {
+  font-size: 12px;
+  gap: 30px;
+  padding: 40px;
+}
+
+.footer {
+  gap: 14px;
+}
+
+@media (max-width: 920px) {
+  .where {
+    max-width: 90vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
-  .footer {
-    gap: 14px;
+  .where-info {
+    max-width: none;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .where-info h2 {
+    text-align: center;
+  }
+
+  .sucursales {
+    gap: 40px;
+  }
+
+  .where-img {
+    display: none;
+  }
+}
+
+@media (max-width: 840px) {
+  #hero {
+    flex-wrap: wrap-reverse;
+    padding: 70px 30px;
+    margin-top: 0;
+  }
+
+  .hero-card {
+    padding: 5px;
+    width: 240px;
+  }
+
+  .hero-info {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 90vw;
+  }
+
+  .buttons {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .buttons a {
+    width: 180px;
+    height: 80px;
   }
 }
 
 @media (max-width: 720px) {
   #hero {
     padding: 70px 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  #hero {
+    padding: 1px;
   }
 }
 
@@ -94,6 +261,27 @@
 
   #productos h2 {
     font-size: 30px;
+  }
+
+  .where {
+    max-width: none;
+    gap: 40px;
+    width: 100vw;
+  }
+
+  .where-info {
+    width: 90%;
+    gap: 60px;
+  }
+
+  .sucursales {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .where-img {
+    display: block;
+    width: 100vw;
   }
 
   .footer {
