@@ -1,0 +1,85 @@
+@media (max-width: 1112px) {
+  #hero {
+    padding: 100px;
+  }
+
+  .hero-info h1 {
+    font-size: 60px;
+  }
+
+  .hero-info p {
+    font-size: 16px;
+  }
+
+  .buttons a {
+    font-size: 14px;
+    width: 170px;
+    height: 60px;
+  }
+
+  .hero-card {
+    width: 400px;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar-list {
+    background-color: #fff;
+    position: absolute;
+    flex-direction: column;
+    width: 100%;
+    top: 96px;
+    left: 0;
+    right: 0;
+    padding: 40px;
+    align-items: center;
+    justify-content: center;
+    display: none;
+  }
+
+  .navbar i {
+    display: block;
+  }
+
+  .label-menu {
+    cursor: pointer;
+  }
+
+  #toggle-menu:checked + .navbar-list {
+    display: flex;
+  }
+
+  #about {
+    padding: 150px 80px;
+    font-size: 14px;
+  }
+
+  footer {
+    font-size: 12px;
+    gap: 30px;
+    padding: 40px;
+  }
+
+  .footer {
+    gap: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  header {
+    padding: 1rem 2rem;
+  }
+  #about {
+    padding: 150px 30px;
+  }
+
+  #productos h2 {
+    font-size: 30px;
+  }
+
+  .footer {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}

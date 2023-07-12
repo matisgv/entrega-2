@@ -43,21 +43,30 @@ header img {
   height: 60px;
 }
 
-.navbar {
+.navbar-list {
   display: flex;
   align-items: center;
   gap: 30px;
 }
 
-.navbar a {
+.navbar-list a {
   font-family: "DM Serif Display", serif;
   font-weight: 500;
   color: var(--font-color1);
   font-size: 24px;
 }
 
-.navbar a:hover {
+.navbar-list a:hover {
   color: var(--bg-gradient1);
+}
+
+.navbar i {
+  display: none;
+  font-size: 24px;
+}
+
+#toggle-menu {
+  display: none;
 }
 
 main {
@@ -229,6 +238,10 @@ main {
 .p-cards {
   display: flex;
   gap: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 32px;
 }
 
 .product-card {
@@ -255,6 +268,7 @@ main {
   );
   color: var(--bg-gradient1);
   border: var(--bg-gradient1) 2px solid;
+  cursor: pointer;
 }
 
 #donde-encontrarnos {

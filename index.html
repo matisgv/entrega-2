@@ -6,6 +6,13 @@
     <title>LIVLUM</title>
     <!-- STYLE -->
     <link rel="stylesheet" href="./css/style.css" />
+    <!-- MEDIAQUERIES -->
+    <link rel="stylesheet" href="./css/mediaqueries.css" />
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <!-- FAVICON -->
     <link
       rel="apple-touch-icon"
@@ -30,8 +37,8 @@
     <header>
       <a href="#"><img src="./img/logo-text.png" alt="logo" /></a>
       <!-- NAVBAR -->
-      <nav>
-        <ul class="navbar">
+      <nav class="navbar">
+        <ul class="navbar-list">
           <li>
             <a href="#">Home</a>
           </li>
@@ -45,6 +52,11 @@
             <a href="#donde-encontrarnos">Donde Encontrarnos</a>
           </li>
         </ul>
+
+        <label for="toggle-menu" class="label-menu"
+          ><i class="fa-solid fa-bars" style="color: #c09766"></i
+        ></label>
+        <input type="checkbox" id="toggle-menu" />
       </nav>
     </header>
     <main>
