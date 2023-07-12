@@ -191,7 +191,7 @@ footer {
   }
 
   .where-info {
-    max-width: none;
+    width: auto;
     align-items: center;
     justify-content: center;
   }
@@ -247,7 +247,7 @@ footer {
 
 @media (max-width: 600px) {
   #hero {
-    padding: 1px;
+    padding: 40px 1px;
   }
 }
 
